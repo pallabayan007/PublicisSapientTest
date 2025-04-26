@@ -8,8 +8,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.dao.DuplicateKeyException;
 
-import com.fullstackwebbapp.maven.backend_credit_card_system.entities.CreditCard;
-import com.fullstackwebbapp.maven.backend_credit_card_system_marco_furone_publicis_sapient.services.CreditCardService;
+// import com.fullstackwebbapp.maven.backend_credit_card_system.entities.CreditCard;
+// import com.fullstackwebbapp.maven.backend_credit_card_system_marco_furone_publicis_sapient.services.CreditCardService;
 
 public class CreditCardServiceUnitTests {
 	

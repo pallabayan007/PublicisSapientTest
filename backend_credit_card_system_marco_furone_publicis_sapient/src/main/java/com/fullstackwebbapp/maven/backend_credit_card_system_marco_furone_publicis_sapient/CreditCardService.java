@@ -20,11 +20,12 @@ public class CreditCardService {
 	
 	public void addCreditCard (CreditCard card) {
 		jdbcTemplate.update(DbConstants.INSERT_QUERY,
-	    		new Object[] { card.getUserName(), card.getNumber(), card.getLimit(), 0 });
+	    		new Object[] { card.getUserName(), card.getNumber(), card.getLimit(), 100 });
 	}
 	
 	private class CreditCardRowMapper implements RowMapper<CreditCard> {
-		public CreditCard mapRow(ResultSet rs, int rowNum) throws SQLException {
+                @Override
+		public CreditCard mapRow(@SuppressWarnings("null") ResultSet rs, int rowNum) throws SQLException {
 			CreditCard card= new CreditCard();
 			card.setUserName(rs.getString("name"));
 			card.setNumber(rs.getString("number"));
