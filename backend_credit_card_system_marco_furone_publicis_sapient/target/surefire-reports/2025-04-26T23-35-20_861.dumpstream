@@ -1,5 +1,0 @@
-# Created at 2025-04-26T23:35:21.114
-Boot Manifest-JAR contains absolute paths in classpath 'D:\VSCode\sapient\test\PublicisSapientTest\backend_credit_card_system_marco_furone_publicis_sapient\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-'other' has different root
-
