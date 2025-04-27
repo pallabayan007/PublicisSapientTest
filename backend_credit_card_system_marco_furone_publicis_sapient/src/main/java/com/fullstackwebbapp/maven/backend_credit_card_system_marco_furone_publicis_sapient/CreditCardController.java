@@ -29,7 +29,7 @@ public class CreditCardController {
 		if (creditCard.checkLuhn10()) {
 			try {
 				creditCardManagementService.addCreditCard(creditCard);
-				return new ResponseEntity<Object>(HttpStatus.OK);
+				return new ResponseEntity<>(HttpStatus.OK);
 			} catch (DuplicateKeyException e) {
 				return new ResponseEntity<Error>(HttpStatus.CONFLICT);
 			}
