@@ -49,8 +49,9 @@ function App() {
 
   const checkLuhn10 = number => {
     let sum = 0;
-    for (let i=0; i<number.length; i++){
-      let digit = Number(number.charAt(i));
+   
+    for (let i=number.length-1; i>=0; i--){
+      let digit = Number(number.charAt(i) - '0');
       if (i % 2 === 0) {
         digit *= 2;
         if (digit > 9)

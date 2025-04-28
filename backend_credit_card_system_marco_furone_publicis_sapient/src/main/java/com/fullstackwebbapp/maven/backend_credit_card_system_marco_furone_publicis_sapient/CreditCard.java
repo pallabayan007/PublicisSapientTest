@@ -44,7 +44,8 @@ public class CreditCard {
 	public boolean checkLuhn10() {
 		number = number.replaceAll("[ -]", "");
 	    int sum = 0;
-	    for (int i=0; i<number.length(); i++){
+	    // for (int i=0; i<number.length(); i++){
+		for (int i=number.length()-1; i>=0; i--){
 	    int digit = (int) number.charAt(i) - '0';
 	      if (i % 2 == 0) {
 	        digit *= 2;
