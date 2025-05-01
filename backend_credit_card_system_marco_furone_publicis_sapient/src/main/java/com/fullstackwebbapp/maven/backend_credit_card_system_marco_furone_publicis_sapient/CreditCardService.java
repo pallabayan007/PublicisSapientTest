@@ -20,7 +20,7 @@ public class CreditCardService {
 	
 	public void addCreditCard (CreditCard card) {
 		jdbcTemplate.update(DbConstants.INSERT_QUERY,
-	    		new Object[] { card.getUserName(), card.getNumber(), card.getLimit(), 100 });
+	    		new Object[] { card.getUserName(), card.getNumber(), card.getLimit(), 0 });
 	}
 	
 	private class CreditCardRowMapper implements RowMapper<CreditCard> {

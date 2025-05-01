@@ -18,7 +18,7 @@ const Table = props => {
             <tr key={card.number}>
               <td> {card.userName} </td>
               <td> {formatNumber(card.number)} </td>
-              <td> £100 </td>
+              <td> £0 </td>
               <td> {card.limit} </td>
             </tr>
           )
